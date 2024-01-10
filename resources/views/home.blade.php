@@ -1,6 +1,8 @@
 @extends('layouts.master')
 
 @section('content')
+<link rel="stylesheet" href="{{ asset('css/home.css') }}">
+
 <section id="carousel">
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-indicators">

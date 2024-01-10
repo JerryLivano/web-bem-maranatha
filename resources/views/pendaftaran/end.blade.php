@@ -1,13 +1,15 @@
 @extends('layouts.master')
 
 @section('content')
+
+<link rel="stylesheet" href="{{ asset('css/pendaftaran.css') }}">
 <div class="container d-flex justify-content-center">
-    <div class="card">
+    <div class="card my-4">
         <h3 class="card-header text-center">Pendaftaran Selesai</h3>
         <div class="card-body p-3">
             <div class="text-center p-3">
-                <img src="../img/done.png" width="40%">
-                <div class="mt-4" style="font-size: 24px;">
+                <img src="../img/done.png" width="30%">
+                <div class="mt-4" style="font-size: 30px;">
                     Terima Kasih Sudah Mendaftar
                 </div>
             </div>
