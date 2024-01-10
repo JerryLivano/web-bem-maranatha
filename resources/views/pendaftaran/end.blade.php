@@ -17,9 +17,9 @@
                 Join Grup WhatsApp <a href="http://">Klik Disini</a>
             </div>
             <div class="mt-3">
-                <label>Contact Person: Matthew Christopher</label>
+                <label>Contact Person: Christopher Richard A.</label>
                 <div>
-                    <a href="">Klik untuk chat</a>
+                    <a href="wa.me/6285724310103">Klik untuk chat</a>
                 </div>
             </div>
             <div class="mt-3 text-center">
