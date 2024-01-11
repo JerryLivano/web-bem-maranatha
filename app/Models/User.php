@@ -45,6 +45,6 @@ class User extends Authenticatable
     ];
     public function kajian()
     {
-        return $this->hasMany(Kajian::class,'publisher_id');
+        return $this->hasMany(Kajian::class,'member_id');
     }
 }

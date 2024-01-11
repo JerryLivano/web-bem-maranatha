@@ -22,6 +22,11 @@ Route::get('/', function () {
 });
 
 Route::get('/kajian', [KajianController::class,'index']);
+Route::get('/kajian/create', [KajianController::class,'create'])->middleware('auth');
+Route::post('/kajian/create', [KajianController::class,'store'])->middleware('auth');
+Route::post('/kajian/delete/{id}', [KajianController::class,'destroy'])->middleware('auth');
+Route::get('/kajian/edit/{id}', [KajianController::class,'edit'])->middleware('auth');
+Route::post('/kajian/edit/{id}', [KajianController::class,'update'])->middleware('auth');
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login')->middleware('guest');

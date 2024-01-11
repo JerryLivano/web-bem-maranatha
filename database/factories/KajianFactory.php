@@ -17,8 +17,7 @@ class KajianFactory extends Factory
     public function definition(): array
     {
         return [
-            'member_id' =>$this->mt_rand(1,5),
-            'slug' =>$this->faker->slug(),
+            'member_id' =>mt_rand(1,5),
             'title'=>$this->faker->sentence(mt_rand(1,2)),
             'cover'=>$this->faker->sentence(1,1),
         ];
