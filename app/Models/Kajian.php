@@ -15,6 +15,6 @@ class Kajian extends Model
 
     public function user()
     {
-        return $this->belongsTo(User::class,'publisher_id');
+        return $this->belongsTo(User::class,'member_id');
     }
 }
