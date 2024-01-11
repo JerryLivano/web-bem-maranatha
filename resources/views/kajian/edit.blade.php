@@ -23,12 +23,12 @@
                         <input class="form-control" type="file" accept="img/*" name="cover" id="cover" onchange="preview()" value="{{$kajian->cover}}">
                     </div>
                     <div class="form-group mt-3">
-                        <label for="file">File:</label> <span class="text-danger">*</span>
-                        <input class="form-control" type="file" accept=".pdf" required name="file" id="file" value="{{$kajian->file}}">
+                        <label for="file">File:</label>
+                        <input class="form-control" type="file" accept=".pdf" name="file" id="file" value="{{$kajian->file}}">
                     </div>
                     <div class="button mt-4 d-flex justify-content-end">
                         <button class="btn btn-danger me-2">Cancel</button>
-                        <input type="submit" class="btn btn-primary" value="Add">
+                        <input type="submit" class="btn btn-primary" value="Update">
                     </div>
                 </form>
             </div>

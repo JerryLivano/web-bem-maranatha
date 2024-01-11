@@ -22,7 +22,6 @@
         <div class="login-logo">
             BEM Maranatha
         </div>
-
         @yield('content')
     </div>
     <!-- /.login-box -->

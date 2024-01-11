@@ -21,8 +21,6 @@
 <section id="keanggotaan">
     <div class="container p-5 text-center">
         <!-- Tabel keanggotaan per departemen
-    Per departemen bisa ada banyak biro (nanti dikelompokin lagi per biro)
-    Kepala biro dulu baru anggota kalo bisa
     - Badan Pengurus harian
     - Departemen Keuangan, Sarana, dan Prasarana
     - Departemen Kesekretariatan

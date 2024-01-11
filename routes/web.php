@@ -18,7 +18,7 @@ use App\Http\Controllers\KajianController;
 */
 
 Route::get('/', function () {
-    return redirect(route('home'));
+    return view('home');
 });
 
 Route::get('/kajians', [KajianController::class,'index']);

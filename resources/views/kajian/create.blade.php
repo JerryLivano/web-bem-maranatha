@@ -22,7 +22,7 @@
                         <input class="form-control" type="file" accept=".pdf" required name="file" id="file" placeholder="Link Sertifikat Wiratha">
                     </div>
                     <div class="button mt-4 d-flex justify-content-end">
-                        <button class="btn btn-danger me-2">Cancel</button>
+                        <a href="/kajians" class="btn btn-danger me-2">Cancel</a>
                         <input type="submit" class="btn btn-primary" value="Add">
                     </div>
                 </form>

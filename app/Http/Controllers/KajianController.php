@@ -44,7 +44,7 @@ class KajianController extends Controller
         }
         $validated['member_id'] = auth()->user()->id;
         Kajian::create($validated);
-        return redirect('/kajian')->with('success', 'New kajian has been added successfully');
+        return redirect('/kajians')->with('success', 'New kajian has been added successfully');
     }
 
     /**
@@ -92,7 +92,7 @@ class KajianController extends Controller
             $validated['file'] =$request->file('file')->store('book-file');
         }
         Kajian::where('id', $id->id)->update($validated);
-        return redirect('/kajian')->with('success', 'Kajian has been edit successfully');
+        return redirect('/kajians')->with('success', 'Kajian has been edit successfully');
     }
 
     /**
@@ -107,6 +107,6 @@ class KajianController extends Controller
             Storage::delete($id->file);
         }
         Kajian::destroy($id->id);
-        return redirect('/kajian')->with('success', 'Kajian has been deleted');
+        return redirect('/kajians')->with('success', 'Kajian has been deleted');
     }
 }
