@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg bg-primary">
+<nav class="navbar navbar-expand-lg" style="background-color: #2B6EB5;">
     <div class="container">
         <img src="{{ asset('img/logo.png') }}" height="60" />
 
@@ -23,21 +23,20 @@
                     Kajian
                 </a>
                 <button data-mdb-ripple-init type="button" class="btn px-3 me-2 text-light">
-
                     Pendaftaran
                 </button>
                 @auth
                 <form id="logout-form" action="{{route('logout')}}" method="post">
                     @csrf
                     <a class="nav-link" onclick="$('#logout-form').submit();">
-                        <button data-mdb-ripple-init type="submit" class="btn btn-light text-primary me-3">
+                        <button data-mdb-ripple-init type="submit" class="btn btn-light me-3" style="color: #2B6EB5;">
                             {{ Auth::user()->name }}
                         </button>
                     </a>
                 </form>
                 @else
                 <a href="{{ route('login') }}" class="nav-link">
-                    <button data-mdb-ripple-init type="button" class="btn btn-light text-primary me-3">
+                    <button data-mdb-ripple-init type="button" class="btn btn-light me-3" style="color: #2B6EB5;">
                         Login Member
                     </button>
                 </a>

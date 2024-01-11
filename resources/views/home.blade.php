@@ -50,12 +50,12 @@
 <div class="container">
     <section id="about" class="p-5">
         <div class="row">
-            <div class="col-md-4 text-primary">
+            <div class="col-md-4" style="color: #2B6EB5;">
                 <div id="about-bem">TENTANG BEM</div>
                 <div id="about-ukm">Universitas Kristen Maranatha</div>
             </div>
             <div class="col-md-8 text-center">
-                <div class="bg-primary mt-5" style="height: 10px;"></div>
+                <div class="mt-5" style="height: 10px; background-color: #2B6EB5;"></div>
             </div>
         </div>
         <div class="row mt-5">
@@ -63,7 +63,7 @@
                 <img src="{{ asset('img/about.png') }}" id="about-img">
             </div>
             <div class="col-md-6">
-                <div id="about-content" class="bg-primary p-5 text-light text-center">
+                <div id="about-content" class="p-5 text-light text-center" style="background-color: #2B6EB5;">
                     Badan Eksekutif Mahasiswa Universitas Kristen Maranatha (BEM UKM) merupakan organisasi mahasiswa UKM yang memegang fungsi eksekutif skala Universitas. BEM UKM lahir untuk memberikan jawaban dari berbagai macam persoalan serta mempersatukan mahasiswa UKM menjadi #kitasatumaranatha
                 </div>
             </div>
@@ -71,7 +71,7 @@
     </section>
 </div>
 
-<section id="visi-misi" class="p-5 bg-primary">
+<section id="visi-misi" class="p-5" style="background-color: #2B6EB5;">
     <div class="container text-center">
         <img src="{{ asset('img/visi-misi.png') }}" id="visi-misi-img">
     </div>
@@ -79,22 +79,22 @@
 
 <div class="container">
     <section id="kabinet" class="p-5">
-        <div class="text-center text-primary">
-            <h1 id="kabinet-logo">LOGO</h1>
-            <h5 id="kabinet-nama">Kabinet - Prabatha Abhipraya</h5>
+        <div class="text-center" style="color: #2B6EB5;">
+            <h1 id="kabinet-logo" style="font-weight: bold; letter-spacing: 4px;">Logo Kabinet</h1>
+            <h5 id="kabinet-nama" class="mt-3">Prabatha Abhipraya</h5>
         </div>
         <img src="{{ asset('img/logo-kabinet.png') }}" id="kabinet-img">
     </section>
 </div>
 
-<section id="bem-section" class="p-5 text-center bg-primary">
+<section id="bem-section" class="py-4 text-center" style="background-color: #2B6EB5;">
     <h1 class="text-light">BEM Maranatha</h1>
 </section>
 
 <div class="container">
     <section id="logo" class="p-5">
-        <div class="text-center text-primary">
-            <h1 id="logo-title">Logo Resmi Badan Eksekutif Mahasiswa</h1>
+        <div class="text-center" style="color: #2B6EB5;">
+            <h1 id="logo-title" style="font-weight: bold;">Logo Resmi Badan Eksekutif Mahasiswa</h1>
         </div>
         <img src="{{ asset('img/logo-resmi.png') }}" id="kabinet-img">
         <div id="logo-content" class="mt-5">
