@@ -19,7 +19,7 @@
                 <button data-mdb-ripple-init type="button" class="btn px-3 me-1 text-light">
                     Kegiatan
                 </button>
-                <a data-mdb-ripple-init href="/kajian" type="button" class="btn px-3 me-2 text-light">
+                <a data-mdb-ripple-init href="/kajians" type="button" class="btn px-3 me-2 text-light">
                     Kajian
                 </a>
                 <button data-mdb-ripple-init type="button" class="btn px-3 me-2 text-light">

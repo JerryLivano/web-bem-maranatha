@@ -14,7 +14,7 @@ return new class extends Migration
         Schema::create('kajians', function (Blueprint $table) {
             $table->id();
             $table->foreignId('member_id');
-            $table->string('cover');
+            $table->string('cover')->nullable();
             $table->string('title');
             $table->string('file')->nullable();
             $table->timestamps();

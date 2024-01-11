@@ -4,6 +4,8 @@ namespace App\Models;
 
 // use Illuminate\Contracts\Auth\MustVerifyEmail;
 use App\Models\Kajian;
+use App\Models\Faculty;
+use App\Models\Department;
 use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
@@ -46,5 +48,15 @@ class User extends Authenticatable
     public function kajian()
     {
         return $this->hasMany(Kajian::class,'member_id');
+    }
+
+    public function department()
+    {
+        return $this->belongsTo(Department::class,'department_id');
+    }
+
+    public function faculty()
+    {
+        return $this->belongsTo(Faculty::class,'faculty_id');
     }
 }

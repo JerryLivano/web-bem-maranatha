@@ -19,7 +19,6 @@ class KajianFactory extends Factory
         return [
             'member_id' =>mt_rand(1,5),
             'title'=>$this->faker->sentence(mt_rand(1,2)),
-            'cover'=>$this->faker->sentence(1,1),
         ];
     }
 
