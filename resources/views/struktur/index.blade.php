@@ -31,6 +31,8 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $bph->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $bph->faculty->name }}
+                            </h5>
                         </div>
                     </div>
                 @endforeach
@@ -47,6 +49,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $ksp->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $ksp->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -62,6 +65,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $sekre->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $sekre->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -78,6 +82,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $ik->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $ik->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -94,6 +99,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $kp->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $kp->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -110,11 +116,13 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $pm->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $pm->faculty->name }}
                         </div>
                     </div>
                 @endforeach
             </div>
-            <div class="h1 fw-bold mt-5" style="color: #2B6EB5;"> Departemen <span style="color: #ffc633;"> Sosial, Politik,
+            <div class="h1 fw-bold mt-5" style="color: #2B6EB5;"> Departemen <span style="color: #ffc633;"> Sosial,
+                    Politik,
                     dan Hukum
                 </span>
             </div>
@@ -126,6 +134,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $sph->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $sph->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -142,6 +151,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $psdo->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $psdo->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -157,6 +167,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $mb->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $mb->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -172,6 +183,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $p->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $p->faculty->name }}
                         </div>
                     </div>
                 @endforeach
@@ -188,6 +200,7 @@
                             style="border-radius: 15px 15px 0 0;">
                         <div class="card-body m-1">
                             <h5 class="card-title fs-5" style="color: #ffffff;">{{ $hlu->name }}</h5>
+                            <h5 class="card-title fs-6 lead" style="color: #c0c0c0;">{{ $hlu->faculty->name }}
                         </div>
                     </div>
                 @endforeach
