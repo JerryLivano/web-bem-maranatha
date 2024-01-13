@@ -10,12 +10,13 @@
             </ul>
 
             <div class="d-flex align-items-center">
-                <a href="{{ route('home') }}"><button data-mdb-ripple-init type="button" class="btn px-3 me-1 text-light">
+                <a href="{{ route('home') }}"><button data-mdb-ripple-init type="button"
+                        class="btn px-3 me-1 text-light">
                         Home
                     </button></a>
-                <button data-mdb-ripple-init type="button" class="btn px-3 me-1 text-light">
+                <a data-mdb-ripple-init href="/struktur" type="button" class="btn px-3 me-1 text-light">
                     Struktur
-                </button>
+                </a>
                 <button data-mdb-ripple-init type="button" class="btn px-3 me-1 text-light">
                     Kegiatan
                 </button>
@@ -26,20 +27,20 @@
                     Pendaftaran
                 </button>
                 @auth
-                <form id="logout-form" action="{{route('logout')}}" method="post">
-                    @csrf
-                    <a class="nav-link" onclick="$('#logout-form').submit();">
-                        <button data-mdb-ripple-init type="submit" class="btn btn-light me-3" style="color: #2B6EB5;">
-                            {{ Auth::user()->name }}
+                    <form id="logout-form" action="{{ route('logout') }}" method="post">
+                        @csrf
+                        <a class="nav-link" onclick="$('#logout-form').submit();">
+                            <button data-mdb-ripple-init type="submit" class="btn btn-light me-3" style="color: #2B6EB5;">
+                                {{ Auth::user()->name }}
+                            </button>
+                        </a>
+                    </form>
+                @else
+                    <a href="{{ route('login') }}" class="nav-link">
+                        <button data-mdb-ripple-init type="button" class="btn btn-light me-3" style="color: #2B6EB5;">
+                            Login Member
                         </button>
                     </a>
-                </form>
-                @else
-                <a href="{{ route('login') }}" class="nav-link">
-                    <button data-mdb-ripple-init type="button" class="btn btn-light me-3" style="color: #2B6EB5;">
-                        Login Member
-                    </button>
-                </a>
                 @endauth
             </div>
         </div>
