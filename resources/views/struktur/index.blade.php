@@ -25,7 +25,7 @@
             </div>
             <div class="row justify-content-center">
                 @foreach ($bphs as $bph)
-                    <div class="card m-2 p-3 col-md-{{ 12 / count($bphs) }}"
+                    <div class="card m-2 p-3 col-md-{{ 12 / count($bphs) }}" data-aos="zoom-in"
                         style="max-width: 18rem; border: none; background: linear-gradient(to bottom, #007bff, #0056b3);">
                         <img src="img/no_profile.png" class="card-img-top" alt="Card Image"
                             style="border-radius: 15px 15px 0 0;">
@@ -207,4 +207,13 @@
             </div>
         </div>
     </section>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true,
+            mirror: false
+        });
+    </script>
 @endsection

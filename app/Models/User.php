@@ -47,16 +47,21 @@ class User extends Authenticatable
     ];
     public function kajian()
     {
-        return $this->hasMany(Kajian::class,'member_id');
+        return $this->hasMany(Kajian::class, 'member_id');
+    }
+
+    public function kegiatan()
+    {
+        return $this->hasMany(Kegiatan::class, 'member_id');
     }
 
     public function department()
     {
-        return $this->belongsTo(Department::class,'department_id');
+        return $this->belongsTo(Department::class, 'department_id');
     }
 
     public function faculty()
     {
-        return $this->belongsTo(Faculty::class,'faculty_id');
+        return $this->belongsTo(Faculty::class, 'faculty_id');
     }
 }

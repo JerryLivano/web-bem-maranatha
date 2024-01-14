@@ -17,6 +17,7 @@ class DatabaseSeeder extends Seeder
     {
         \App\Models\User::factory(20)->create();
         \App\Models\Kajian::factory(10)->create();
+        \App\Models\Kegiatan::factory(10)->create();
         Department::create([
             'name' => 'BPH',
         ]);
@@ -50,7 +51,7 @@ class DatabaseSeeder extends Seeder
         Department::create([
             'name' => 'Hubungan Luar Universitas',
         ]);
-        
+
         Faculty::create([
             'name' => 'Teknologi Informasi'
         ]);

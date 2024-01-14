@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KajianController;
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\StructureController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\RecruitmentController;
@@ -36,6 +37,8 @@ Route::post('/recruitment', [RecruitmentController::class, 'store'])->middleware
 Route::post('/recruitment/{id}', [RecruitmentController::class, 'update'])->middleware('isAdmin');
 
 Route::get('/struktur', [StructureController::class, 'index']);
+
+Route::resource('/kegiatan', KegiatanController::class);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login')->middleware('guest');

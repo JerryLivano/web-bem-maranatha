@@ -30,7 +30,7 @@ class UserFactory extends Factory
             'password' => static::$password ??= Hash::make('password'),
             'department_id' => mt_rand(1, 11),
             'faculty_id' => mt_rand(1, 9)
-            
+
         ];
     }
 
