@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('content')
-    <div class="container justify-content-center my-4">
+    <div class="container justify-content-center my-4" style="min-height: 40vh;">
         <div class="card">
             <div class="card-body p-0">
                 <table class="table table-hover mb-0 text-center data">
@@ -40,8 +40,8 @@
                                         <form action="/recruitment/{{ $recruitment->id }}" method="POST">
                                             @csrf
                                             <div class="btn-group">
-                                                <button type="submit"
-                                                    class="btn btn-success mr-4 rounded-lg"><i class="fa fa-check"></i></button>
+                                                <button type="submit" class="btn btn-success mr-4 rounded-lg"><i
+                                                        class="fa fa-check"></i></button>
                                             </div>
                                         </form>
                                     </td>
