@@ -23,9 +23,9 @@
                 <a data-mdb-ripple-init href="/kajians" type="button" class="btn px-3 me-2 text-light">
                     Kajian
                 </a>
-                <button data-mdb-ripple-init type="button" class="btn px-3 me-2 text-light">
+                <a data-mdb-ripple-init href="/recruitment" type="button" class="btn px-3 me-2 text-light">
                     Pendaftaran
-                </button>
+                </a>
                 @auth
                     <form id="logout-form" action="{{ route('logout') }}" method="post">
                         @csrf

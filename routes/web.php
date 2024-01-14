@@ -1,11 +1,13 @@
 <?php
 
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\HomeController;
+use App\Http\Controllers\DaftarController;
 use App\Http\Controllers\KajianController;
 use App\Http\Controllers\StructureController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\RecruitmentController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,6 +30,10 @@ Route::post('/kajians/create', [KajianController::class, 'store'])->middleware('
 Route::post('/kajians/delete/{id}', [KajianController::class, 'destroy'])->middleware('auth');
 Route::get('/kajians/edit/{id}', [KajianController::class, 'edit'])->middleware('auth');
 Route::post('/kajians/edit/{id}', [KajianController::class, 'update'])->middleware('auth');
+
+Route::get('/recruitment', [RecruitmentController::class, 'index']);
+Route::post('/recruitment', [RecruitmentController::class, 'store'])->middleware('guest');
+Route::post('/recruitment/{id}', [RecruitmentController::class, 'update'])->middleware('isAdmin');
 
 Route::get('/struktur', [StructureController::class, 'index']);
 
