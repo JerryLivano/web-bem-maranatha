@@ -5,6 +5,7 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\KajianController;
+use App\Http\Controllers\KegiatanController;
 use App\Http\Controllers\StructureController;
 
 /*
@@ -30,6 +31,8 @@ Route::get('/kajians/edit/{id}', [KajianController::class, 'edit'])->middleware(
 Route::post('/kajians/edit/{id}', [KajianController::class, 'update'])->middleware('auth');
 
 Route::get('/struktur', [StructureController::class, 'index']);
+
+Route::resource('/kegiatan', KegiatanController::class);
 
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login', [LoginController::class, 'authenticate'])->name('login')->middleware('guest');

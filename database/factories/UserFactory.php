@@ -24,13 +24,13 @@ class UserFactory extends Factory
     public function definition(): array
     {
         return [
-            'nrp'=>mt_rand(2172000,2172100),
+            'nrp' => mt_rand(2172000, 2572100),
             'name' => fake()->name(),
             'email' => fake()->unique()->safeEmail(),
             'password' => static::$password ??= Hash::make('password'),
             'department_id' => mt_rand(1, 11),
             'faculty_id' => mt_rand(1, 9)
-            
+
         ];
     }
 
