@@ -24,7 +24,7 @@
                     <div class="row mt-4">
                         <div class="col-md-8 d-flex justify-content-start">
                             @auth
-                            @if ($kajian->member_id == auth()->user()->id)
+                            @if ($kajian->member_id == auth()->user()->id||auth()->user()->isAdmin)
                             <a href="/kajians/edit/{{ $kajian->id }}" class="btn btn-warning me-1"><i class="fa fa-edit"></i></a>
                             <form action="/kajians/delete/{{$kajian->id}}" method="POST">
                                 @csrf
